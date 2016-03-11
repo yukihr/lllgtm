@@ -1,0 +1,28 @@
+{
+  "name": "looksgood",
+  "version": "0.0.1",
+  "author": "yukihiro hara <yukihr@gmail.com>",
+  "description": "LGTMize every images.",
+  "license": "MIT",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yukihr/looksgood"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/typings install",
+    "update-typings": "typings install filewriter filesystem webrtc/mediastream es6-promise chrome react --ambient --overwrite --save",
+    "generate-key": "openssl genrsa 2048 | openssl pkcs8 -topk8 -nocrypt -out crx.pem",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.8",
+    "copy-webpack-plugin": "^1.1.1",
+    "crx-webpack-plugin": "^0.1.3",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.7",
+    "typings": "^0.7.7",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {}
+}

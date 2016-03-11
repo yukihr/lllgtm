@@ -1,0 +1,17 @@
+{
+  "name": "looksgood",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "author": "yukihiro hara <yukihr@gmail.com>",
+  "description": "LGTMify every images.",
+  "homepage_url": "https://github.com/yukihr/looksgood",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "sourceMap": true
+  },
+  "files": [
+    "typings/main.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
